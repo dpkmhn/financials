@@ -1,0 +1,3 @@
+create table customers (id varchar(36) primary key, org_id varchar(64) not null, name varchar(255) not null, email varchar(255) not null, currency varchar(10) not null, payment_terms varchar(64) not null);
+create table invoices (id varchar(36) primary key, org_id varchar(64) not null, customer_name varchar(255) not null, invoice_number varchar(64) not null unique, amount numeric(19,2) not null, issue_date date, due_date date, status varchar(16));
+create table bills (id varchar(36) primary key, org_id varchar(64) not null, vendor varchar(255) not null, bill_number varchar(64) not null unique, amount numeric(19,2) not null, due_date date, paid boolean not null);
