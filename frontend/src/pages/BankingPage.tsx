@@ -1,0 +1,2 @@
+import { mock } from '../api/client'
+export function BankingPage(){return <section><h1>Banking</h1><article className='panel'><h3>Recent Transactions</h3><table><thead><tr><th>Date</th><th>Account</th><th>Category</th><th>Type</th><th>Amount</th></tr></thead><tbody>{mock.bankTransactions.map(t=><tr key={t.id}><td>{t.date}</td><td>{t.account}</td><td>{t.category}</td><td>{t.type}</td><td>${t.amount}</td></tr>)}</tbody></table></article></section>}
