@@ -1,6 +1,6 @@
 # Accounting SaaS - Version 2 (Revamped UI)
 
-A modern accounting platform inspired by Zoho Books
+A modern full-stack accounting platform inspired by Zoho Books
 
 ## Stack
 - Backend: Spring Boot 3 + Java 21 + JPA + Flyway + H2
